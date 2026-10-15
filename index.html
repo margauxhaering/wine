@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Domaine viticole Dugat-Py bourgogne">
+    <meta name="author" content="margaux haering">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Domaine Dugat-Py</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <nav>
+            <ul>
+                <li><a href="history.html"><b>History</b></a></li>
+                <li><a href="aumonerie.html"><b>L'Aumonerie</b></a></li>
+                <a href="index.html"><li class="logo"></li></a>
+                <li><a href="appellations.html"><b>Appellations</b></a></li>
+                <li><a href="distribution.html"><b>Distribution</b></a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- ***** Header Area End ** *** -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 main-text">
+          <h2>The Dugat-Py Story<br></h2>
+             <h1><b>13 Generations of Experience Making Quality Wines</b></h1>
+             <a href="#find-out-more"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find out More ⤵</a>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="wine-bottle">
+              <img src="/assets/images/bottle.jpg" alt="">
+          </div>
+        </div>
+  </div>
+</div>
+
+</div>
+<div class="more" id="find-out-more">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 sec-text">
+        <h1>Inimitable  Dugat-Py</h1>
+        <br>
+        <b>Loïc and Bernard Dugat-Py</b>, <br>the thirteenth generation of wine makers would like to show you their 15 ha family Domaine at Gevrey-Chambertin, in the heart of the great terroirs of Burgundy.
+<br><br>- A wealth of knowledge and know-how accumulated by thirteen generations of wine makers.
+<br>- Visual selection of the most robust vineplants of old Pinot Noirs.
+<br>- Constant work in plots of vines(parcelles) which are mostly Très Vieilles Vignes (very old vines of more than 65 years old), and the use of organic preparations which have defined the Dugat-Py style.
+
+<br><br>As winemakers following the great Burgundy tradition, we buy neither grapes nor wine from elsewhere, in order to concentrate on working with our vines, which is a guarantee of seriousnes and the highest quality.
+
+<br><br>When tasting one of our bottles after a minimum 6-8 years of ageing, you will rediscover wines which are deeply coloured, rich, full-bodied and elegant and which contributed to the prestige and reputation of Burgundy wine before the 1970's and 1980's.
+
+      </div>
+      <div class="col-lg-6">
+        <div class="portrait">
+            <img src="/assets/images/portrait.jpg" alt="">
+        </div>
+      </div>
+</div>
+</div>
+
+</div>
+
+  <!-- Scripts -->
+  <script>
+  function handleScroll() {
+    const bannerHeight = document.querySelector('.main-banner').offsetHeight;
+    const scrollPosition = window.scrollY;
+    const textElement = document.querySelector(".main-text");
+    const bottleImage = document.querySelector(".wine-bottle img");
+
+    if (scrollPosition > bannerHeight / 15) {
+      textElement.classList.remove("fade-in-left");
+      textElement.classList.add("fade-out-left");
+
+      bottleImage.classList.remove("fade-in-right");
+      bottleImage.classList.add("fade-out-right");
+    } else {
+      textElement.classList.remove("fade-out-left");
+      textElement.classList.add("fade-in-left");
+
+      bottleImage.classList.remove("fade-out-right");
+      bottleImage.classList.add("fade-in-right");
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("load", () => {
+    document.querySelector(".main-text").classList.add("fade-in-left");
+    document.querySelector(".wine-bottle img").classList.add("fade-in-right");
+  });
+
+
+
+</script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
